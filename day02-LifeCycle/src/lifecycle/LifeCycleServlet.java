@@ -20,6 +20,7 @@ public class LifeCycleServlet extends HttpServlet {
 	
 	// init(), service() 메소드의 작동 확인을 위해
 	// 작동 횟수를 저장할 멤버 변수
+	// 원래는 서블릿에 절대 멤버변수를 선언하지 않는다.
 	private int count;
 	
 	/**
