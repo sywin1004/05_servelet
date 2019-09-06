@@ -69,6 +69,29 @@ littlePrince 책 정보: <%=littlePrince %> <br />
 <h4>각 속성 값 설정 후 littlePrince</h4>
 <%=littlePrince %>
 
+<hr />
+어린왕자 책 번호 : <jsp:getProperty property="sequence" name="littlePrince"/>
+<br />
+어린왕자 책 제목 : <jsp:getProperty property="isbn" name="littlePrince"/>
+<%--
+	<jsp:getProperty> 액션태그는 : getter 메소드와 동일한 용법
+	property : 추출하고자 하는 멤버변수명
+	name : useBean 에서 선언된 지역변수명, id 값
+	
+	littlePrince.getIsbn();
+	
+	코드와 동일한 액션태그 구문
+ --%>
+ 
+ <%--
+ 	useBean 을 사용할때, scope 을 request 로 주면
+ 	request 에 담겨 전달된 요청 파라미터로 객체 조합이 가능
+  --%>
+<jsp:useBean id="vegitarian" class="book.vo.Book" scope="request"></jsp:useBean>
+<jsp:setProperty property="*" name="vegitarian"/>
+<h4>save.jsp 에서 전달된 채식주의자 요청 파라미터를 useBean 액션태그로 조합</h4>
+<h4>&lt;jsp:setProperty&gr; 의 와일드카드(*) dydqjqdmfh ahems vlfem wkehd tjfwjd</h4>
+<%=vegitarian %>
 </body>
 
 </html>
