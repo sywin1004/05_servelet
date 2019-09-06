@@ -28,7 +28,7 @@
    
   <servlet>
   	<servlet-name>bookList</servlet-name>
-  	<jsp-file>/WEB-INF/list/bookList.jsp</jsp-file>
+  	<jsp-file>/WEB-INF/jsp/list/bookList.jsp</jsp-file>
   </servlet>
   <servlet-mapping>
   	<servlet-name>bookList</servlet-name>
