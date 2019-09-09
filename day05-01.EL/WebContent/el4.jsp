@@ -62,6 +62,19 @@ EL 내장객체 : requestScope <br />
 	<li>\${starMap["S5"]} = ${starMap["S5"]}</li>
 </ol>
 <hr />
+<h3>scriptlet, expressiont Tag 사용한 목록 attribute 추출</h3>
+<%
+	List<String> starNames;
+	starNames = (List<String>)request.getAttribute("stars");
+%>
+<ol>
+	<li>&lt;%=starNames.get(0) %&gt; = <%=starNames.get(0) %></li>
+	<li>&lt;%=starNames.get(1) %&gt; = <%=starNames.get(1) %></li>
+	<li>&lt;%=starNames.get(2) %&gt; = <%=starNames.get(2) %></li>
+	<li>&lt;%=starNames.get(3) %&gt; = <%=starNames.get(3) %></li>
+	<li>&lt;%=starNames.get(4) %&gt; = <%=starNames.get(4) %></li>
+</ol>
+<hr />
 <h3>scriptlet, expression Tag 사용한 맵 attribute 추출</h3>
 <%
 	//requst 객체에서 startMap 이라는 이름의 attribute 추출
@@ -70,11 +83,11 @@ EL 내장객체 : requestScope <br />
 
 %>
 <ol>
-	<li>&lt;%=starNameMap.get("S1") %&gr; = <%=starNameMap.get("S1") %></li>
-	<li>&lt;%=starNameMap.get("S2") %&gr; = <%=starNameMap.get("S2") %></li>
-	<li>&lt;%=starNameMap.get("S3") %&gr; = <%=starNameMap.get("S3") %></li>
-	<li>&lt;%=starNameMap.get("S4") %&gr; = <%=starNameMap.get("S4") %></li>
-	<li>&lt;%=starNameMap.get("S5") %&gr; = <%=starNameMap.get("S5") %></li>
+	<li>&lt;%=starNameMap.get("S1") %&gt; = <%=starNameMap.get("S1") %></li>
+	<li>&lt;%=starNameMap.get("S2") %&gt; = <%=starNameMap.get("S2") %></li>
+	<li>&lt;%=starNameMap.get("S3") %&gt; = <%=starNameMap.get("S3") %></li>
+	<li>&lt;%=starNameMap.get("S4") %&gt; = <%=starNameMap.get("S4") %></li>
+	<li>&lt;%=starNameMap.get("S5") %&gt; = <%=starNameMap.get("S5") %></li>
 </ol>
 
 
