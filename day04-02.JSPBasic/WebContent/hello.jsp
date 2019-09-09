@@ -6,7 +6,7 @@
 				이 페이지에서 import 구문이 필요한 경우 사용.
 				이 페이지에서 태그 라이브러리가 필요한 경우 사용
 --%>
-<%@page import="java.util.ArrayList"%>
+<%@ page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.util.List" %>
