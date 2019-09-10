@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>(5) EL 내장객체 레빌</title>
+<title>(5) EL 내장객체 레벨</title>
 </head>
 <body>
 <h3>내장 객체의 레벨</h3>
@@ -83,6 +83,7 @@ pageScope =&gt; requestScope =&gt; sessionScope =&gt; applicationScope
 	
 	String reqName = (String)request.getAttribute("name");
 	String sessName = (String)session.getAttribute("name");
+
 %>
 <ol>
 	<li>pageId = <%=pageId %></li>
