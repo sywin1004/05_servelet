@@ -55,6 +55,6 @@ public class MyForwardServlet extends HttpServlet {
 		// 4. 얻어진 repd 객체를 사용하여 forward 방식으로
 		// 요청 객체 (request), 응답객체(response) 를 전달
 		reqd.forward(request, response);
-	}
+	} 
 
 }
