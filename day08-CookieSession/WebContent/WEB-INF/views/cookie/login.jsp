@@ -13,8 +13,8 @@
 </head>
 <body>
 <!-- table>(tr>td*2)*3 -->
-<h3>로그인 하세요</h3>
-<form action="login" method="post">
+<h3>로그인 하세요(Cookie)</h3>
+<form action="${pageContext.request.contextPath}/cookie/login" method="post">
 	<table>
 		<tr>
 			<th>유저 아이디</th>

@@ -12,7 +12,7 @@
 </style>
 </head>
 <body>
-<h3>로그인 하세요</h3>
+<h3>로그인 하세요(Session) 로그인 된 사용자 아이디:${userId}</h3>
 <form action="login" method="post">
 	<table>
 		<tr>

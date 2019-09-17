@@ -14,6 +14,6 @@
 로그인 되었습니다. <br />
 
 <hr />
-<a href="${pageContext.request.contextPath}/session/logout"></a>
+<a href="${pageContext.request.contextPath}/session/logout">로그아웃</a>
 </body>
 </html>

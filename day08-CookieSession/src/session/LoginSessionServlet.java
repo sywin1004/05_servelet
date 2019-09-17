@@ -24,7 +24,7 @@ public class LoginSessionServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// 1. 이동할 뷰 결정
 				// (web.xml 에 등록된 쿠키 로그인 jsp 의 url 매핑 주소)
-				String view = "/views/session/login";
+				String view = "/session/views/login";
 				
 				
 				// 2. forward 로 페이지 이동
@@ -80,6 +80,7 @@ public class LoginSessionServlet extends HttpServlet {
 			// 4. 로그인 성공 페이지로 이동
 			String view = "/session/views/success";
 			request.getRequestDispatcher(view).forward(request, response);;
+			
 		} else {
 			// 아이디, 비번이 java, jsp 로 들어오지 않은 로그인 실패
 			// fail.jsp 페이지로 이동 : sendRedirect로 이동

@@ -17,6 +17,7 @@
   	<servlet-name>cookieSuccessJsp</servlet-name>
   	<url-pattern>/views/cookie/success</url-pattern>
   </servlet-mapping>
+  
   <servlet>
   	<servlet-name>sessionLoginJsp</servlet-name>
   	<jsp-file>/WEB-INF/views/session/login.jsp</jsp-file>
@@ -25,6 +26,7 @@
   	<servlet-name>sessionLoginJsp</servlet-name>
   	<url-pattern>/session/views/login</url-pattern>
   </servlet-mapping>
+  
   <servlet>
   	<servlet-name>sessionSuccessJsp</servlet-name>
   	<jsp-file>/WEB-INF/views/session/success.jsp</jsp-file>
@@ -33,6 +35,7 @@
   	<servlet-name>sessionSuccessJsp</servlet-name>
   	<url-pattern>/session/views/success</url-pattern>
   </servlet-mapping>
+  
   <servlet>
   	<servlet-name>sessionFailJsp</servlet-name>
   	<jsp-file>/WEB-INF/views/session/fail.jsp</jsp-file>
